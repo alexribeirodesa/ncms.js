@@ -1,6 +1,10 @@
 function Home() {
+  const myMagicKey = "KEY: "+process.env.MAGIC_KEY;
   return (
-    <div>Home</div>
+    <div>
+      <h1>Home</h1>
+      <p>{myMagicKey}</p>
+    </div>
   )
 }
 
