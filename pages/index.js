@@ -1,12 +1,17 @@
-const myMagicKey = "KEY: "+process.env.MAGIC_KEY;
+import Head from 'next/head'
 
 function Home() {
   return (
-    <div>
-      <h1>Home 5</h1>
-      <p>({myMagicKey})</p>
-      <p>jCMS</p>
-    </div>
+    <>
+      <Head>
+        <title>ARROTINHO :3</title>
+      </Head>
+
+      <div>
+        <h1>Home 5</h1>
+        <p>jCMS</p>
+      </div>
+    </>
   )
 }
 
