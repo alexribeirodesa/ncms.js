@@ -1,0 +1,15 @@
+h1.side {
+	text-align: left;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+}
+@media screen and (max-width: 992px) {
+	h1.side {
+		writing-mode: initial;
+		text-orientation: initial;
+	}
+}
+
+.section {
+	padding: 64px 0;
+}

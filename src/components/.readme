@@ -1,0 +1,8 @@
+store the reusable components from your project
+ 
+ /header.js
+ /footer.js
+ /avatar.js
+ /contactform.js
+ /instagram.js
+ etc...

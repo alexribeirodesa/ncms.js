@@ -1,0 +1,44 @@
+{
+  "general_create": "Criar",
+  "general_edit": "Editar",
+  "general_remove": "Remover",
+
+  "login_title": "Login",
+  "login_description": "Digite seu e-mail e sua senha",
+  "login_email": "E-mail",
+  "login_password": "Senha",
+  "login_submit": "Entrar",
+  "login_error_invalid_email": "Endereço de e-mail invalido",
+  "login_error_wrong_password": "Senha errada",
+  "login_error_user_not_found": "Usuário não encontrado",
+
+  "dashboard_title": "Administração",
+  "dashboard_sidenav_dashboard": "Painel",
+  "dashboard_sidenav_blog": "Blog",
+  "dashboard_sidenav_pages": "Páginas",
+  "dashboard_sidenav_tags": "Etiquetas",
+  "dashboard_sidenav_vault": "Cofre",
+  "dashboard_sidenav_localization": "Localização",
+  "dashboard_sidenav_users": "Usuários",
+  "dashboard_sidenav_settings": "Ajustes",
+
+  "blog_title": "Blog",
+  "blog_new_post": "New Post",
+
+  "pages_title": "Páginas",
+  "pages_home": "Home",
+
+  "tags_title": "Etiquetas",
+
+  "vault_title": "Cofre",
+
+  "users_title": "Usuários",
+
+  "settings_title": "Ajustes",
+  "settings_general": "Geral",
+  "settings_general_site_title": "Título do Site",
+  "settings_general_site_description": "Descrição",
+  "settings_contacts": "Contatos",
+  "settings_localization": "Localização",
+  "settings_about": "Sobre"
+}

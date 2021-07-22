@@ -1,0 +1,108 @@
+/* NAVBAR */
+.navbar {
+	position: fixed;
+	top: 0px;
+	width: 100%; height: 130px;
+	background-color: transparent;
+	transition: all;
+	transition-duration: 750ms;
+	padding: 20px 40px;
+	font: bold 1.5em 'Wire One', sans-serif;
+	color: white;
+	z-index: 1000;
+}
+.navbar.is-fixed {
+	width: 100%;
+	height: 80px;
+
+	background-color: white;
+	background: rgba( 255, 255, 255, 0.75 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 6.0px );
+	-webkit-backdrop-filter: blur( 6.0px );
+		
+	padding: 10px 40px;
+	color: black;
+
+}
+@media screen and (max-width: 767px) {
+	.navbar {
+		height: 90px;
+	}
+	.navbar.is-fixed {
+		height: 70px;
+	}
+}
+.navbar > div {
+	position: relative;
+	width: 100%;
+	max-width: 1280px;
+	height: 100%;
+	margin: 0 auto;    
+}
+.navbar .logo {
+	height: 100%;
+}
+.navbar .logo img {
+	height: 100%;
+	filter: invert(100%);
+	transition: filter;
+	transition-duration: 750ms;
+}
+.navbar.is-fixed .logo img {
+	filter: invert(0%);
+}
+.navbar .menu .options p {
+	display: inline;
+	white-space: nowrap;
+	margin: 0px;
+}
+.navbar .menu .options p:after {
+	content: "/";
+	margin: 0 10px;
+	pointer-events: none;
+	cursor: default;
+	z-index: 10;
+}
+.navbar .menu .options p:last-child:after {
+	display: none;
+}
+.navbar .menu .social {
+	margin-left: 32px;
+}
+.navbar .menu .social a {
+	margin-left: 4px;
+}
+.navbar .mobile path {
+	transition: all;
+	transition-duration: 750ms;
+	stroke: white;
+}
+.navbar.is-fixed .mobile path {
+	stroke: black;
+}
+.mobilemenu {
+	display: flex;
+	position: fixed;
+	top: 0px; left: 0px;
+	width: 100%; height: 100%;
+	transform: translateY(-100%);
+	transition: transform;	
+	transition-duration: 400ms;
+
+	color: white;
+	background: rgba( 0, 0, 0, 0.60 );
+	backdrop-filter: blur( 6.0px );
+	-webkit-backdrop-filter: blur( 6.0px );
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	
+	/*flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+	font-size: calc(25px + (42 - 25) * ((100vw - 300px) / (1600 - 300)));
+	z-index: 900;
+	font-family: 'Wire One', sans-serif;
+}
+.mobilemenu.is-active {
+	transform: translateY(0%);
+}

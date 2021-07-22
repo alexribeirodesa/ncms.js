@@ -1,0 +1,357 @@
+:root .admin {
+  --body: #f9f9f9;
+  --color: #242934;
+  --card: #fff;
+  --primary: #7e37d8;
+  --primary-hover: #6524b8;
+  --secondary: #fe80b2;
+  --success: #80cf00;
+  --info: #06b5dd;
+  --warning: #ffc717;
+  --danger: #fd517d;
+}
+
+
+.admin {
+  min-height: 100vh;
+  background-color: var(--body);
+  font-family: 'Roboto', sans-serif;
+  color: var(--color);
+}
+.admin * {
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease !important;
+  transition: all 0.2s ease !important; 
+}
+.admin, .admin * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.admin a {
+  text-decoration: none;
+}
+
+.admin p,
+.admin .p {
+  /*font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: .7px;*/
+}
+
+.admin h1, .admin h2, .admin h3, .admin h4, .admin h5, .admin h6, 
+.admin .h1, .admin .h2, .admin .h3, .admin .h4, .admin .h5, .admin .h6 {
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: .5rem;
+  /*font-weight: 500;*/
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.admin p span, .admin .p span,
+.admin h1 span, .admin h2 span, .admin h3 span, .admin h4 span, .admin h5 span, .admin h6 span,
+.admin .h1 span, .admin .h2 span, .admin .h3 span, .admin .h4 span, .admin .h5 span, .admin .h6 span {
+  color: var(--color);
+}
+
+.admin .txt-primary {
+  color: var(--primary) !important;
+}
+.admin .txt-secondary {
+  color: var(--secondary) !important;
+}
+.admin .txt-success {
+  color: var(--success) !important;
+}
+.admin .txt-info {
+  color: var(--info) !important;
+}
+.txt-warning {
+  color: var(--warning) !important;
+}
+.admin .txt-danger {
+  color: var(--danger) !important;
+}
+
+.admin .card {
+  overflow: hidden;
+  background-color: var(--card);
+  border: 0px;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+  -webkit-box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+  box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+  border-radius: 20px;
+}
+
+.admin .card .card-head {
+  border-bottom: 1px solid var(--primary);
+}
+
+.admin .card .card-head,
+.admin .card .card-body {
+  padding: 20px;
+}
+
+.admin .alert {
+  border: none;
+  color: var(--card) !important;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.admin .alert-primary {
+    background-color: var(--primary);
+}
+
+.admin .alert-secondary {
+  background-color: var(--secondary);
+}
+
+.admin .alert-success {
+  background-color: var(--success);
+}
+
+.admin .alert-danger {
+  background-color: var(--danger);
+}
+
+.admin .alert-warning {
+  background-color: var(--warning);
+  color: var(--color) !important;
+}
+
+.admin .alert-info {
+  background-color: var(--info);
+}
+
+.admin .alert-light {
+  background-color: var(--body);
+  color: var(--color) !important;
+}
+
+.admin .alert-dark {
+  background-color: var(--color);
+}
+
+.admin form .input-container,
+.admin form input,
+.admin form input[type="submit"],
+.admin button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.admin form .input-container {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--card);
+  width: 100%;
+  padding: 0px 10px;
+  margin: 0px auto 20px auto;
+  border: var(--color) 1px solid;
+}
+.admin form .input-container > * {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;  
+  margin: 10px;
+}
+.admin form .input-container:focus-within {
+  border-color: var(--primary);
+  -webkit-box-shadow: 0 8px 25px -8px var(--primary-hover);
+  box-shadow: 0 8px 25px -8px var(--primary-hover);
+}
+
+.admin form .input-container i {
+  font-size: 1.25em;
+}
+.admin form .input-container:focus-within i {
+  color: var(--primary);
+}
+.admin form .input-container input {
+  font-family: 'Roboto', sans-serif;
+  flex: 1;
+  display: inline-block;
+  border: none;
+}
+.admin textarea:focus, .admin form input:focus{
+  outline: none;
+}
+
+.admin input[type="submit"],
+.admin button, .admin button:hover, .admin button:active, .admin button:visited {
+  color: var(--card);
+  background-color: var(--primary);
+  border: none;
+}
+.admin input[type="submit"]:focus,
+.admin  input[type="submit"]:hover,
+
+.admin  button:focus,
+.admin  button:hover {
+  /*
+  -webkit-box-shadow: 0 0 10px 0 var(--primary-hover);
+  box-shadow: 0 0 10px 0 var(--primary-hover);
+  */
+  -webkit-box-shadow: 0 8px 25px -8px var(--primary-hover);
+  box-shadow: 0 8px 25px -8px var(--primary-hover);
+}
+.admin input[type="submit"]:hover,
+.admin button:hover {
+  background-color: var(--primary-hover);
+}
+
+.admin .auth-wrapper {
+  padding: 40px;
+}
+
+.admin .auth-wrapper .auth-nav {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 40px;
+}
+
+.admin .auth-wrapper .auth-nav svg {
+  width: auto; height: 60px;
+  fill: var(--color);
+}
+
+.admin .auth-wrapper .auth-head {
+}
+
+.admin .auth-wrapper .alert,
+.admin .auth-wrapper form input,
+.admin .auth-wrapper form button,
+.admin .auth-wrapper form .input-container {
+  width: 100%;
+  max-width: 400px;
+}
+.admin .auth-wrapper form input[type="submit"],
+.admin .auth-wrapper form button {
+  height: 48px;
+}
+
+/* - - - - - - - - - - */
+
+.admin .dashboard-wrapper {}
+
+.admin .dashboard-wrapper .header {
+  position: fixed;
+  top: 0px; left: 0px; right: 0px;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--card);
+  -webkit-box-shadow: 2.5px 4.33px 30px 0px rgb(126 55 216 / 5%);
+  box-shadow: 2.5px 4.33px 30px 0px rgb(126 55 216 / 5%);
+}
+
+.admin .dashboard-wrapper .header svg {
+  width: auto; height: 35px;
+  fill: var(--color);
+}
+
+
+
+.admin .dashboard-wrapper .side-nav {
+  position: fixed;
+  margin-top: 95px;
+  top: 0px;
+  height: calc(100vh - 95px);
+  width: 90px;
+  padding: 0px;
+  background-color: var(--card);
+  border-right: 1px solid var(--primary);
+  /*
+  -webkit-box-shadow: 0px 0px 8px -3px var(--primary); 
+  box-shadow: 0px 0px 8px -3px var(--primary);
+  */
+  -webkit-box-shadow: 0 8px 25px -8px var(--primary-hover);
+  box-shadow: 0 8px 25px -8px var(--primary-hover);
+}
+
+.admin .dashboard-wrapper .side-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px; height: 85px;
+  color: var(--color);
+  border-bottom: 1px solid #f8f4fe;
+
+  margin: 0px;
+  font-size: 12px;
+  /*font-family: 'Nunito', sans-serif;*/
+  font-weight: 800;
+}
+
+.admin .dashboard-wrapper .side-nav a:hover {
+  color: var(--primary);
+  background-color: #ece2f9;
+} 
+
+.admin .dashboard-wrapper .side-nav a span:first-of-type {
+  font-size: 28px;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	30% {
+		-webkit-transform: translateY(-8px);
+		-ms-transform:     translateY(-8px);
+		transform:         translateY(-8px)
+	}
+	60% {
+		-webkit-transform: translateY(-4px);
+		-ms-transform:     translateY(-4px);
+		transform:         translateY(-4px)
+	}
+}
+
+.admin .dashboard-wrapper .side-nav a:hover span { 
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+
+
+.admin .dashboard-wrapper .page {
+  padding-left: 90px;
+  padding-top: 95px;
+  min-height: 100vh;
+}
+
+.admin .dashboard-wrapper .page > .page-body {
+  /*background-color: green;*/
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.admin .dashboard-wrapper .page > .page-body .page-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.admin .dashboard-wrapper .page > .page-body .page-header h2 {
+  color: var(--primary);
+}

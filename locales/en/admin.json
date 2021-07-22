@@ -1,0 +1,44 @@
+{
+  "general_create": "Create",
+  "general_edit": "Edit",
+  "general_remove": "Remove",
+
+  "login_title": "Login",
+  "login_description": "Enter your Username and Password",
+  "login_email": "E-mail",
+  "login_password": "Password",
+  "login_submit": "Submit",
+  "login_error_invalid_email": "Invalid e-mail address",
+  "login_error_wrong_password": "Wrong password",
+  "login_error_user_not_found": "User not found",
+
+  "dashboard_title": "Management",
+  "dashboard_sidenav_dashboard": "Dashboard",
+  "dashboard_sidenav_blog": "Blog",
+  "dashboard_sidenav_pages": "Pages",
+  "dashboard_sidenav_tags": "Tags",
+  "dashboard_sidenav_vault": "Vault",
+  "dashboard_sidenav_localization": "Localization",
+  "dashboard_sidenav_users": "Users",
+  "dashboard_sidenav_settings": "Settings",
+
+  "blog_title": "Blog",
+  "blog_new_post": "Nova Postagem",
+  
+  "pages_title": "Pages",
+  "pages_home": "Home",
+
+  "tags_title": "Tags",
+
+  "vault_title": "Vault",
+
+  "users_title": "Users",
+
+  "settings_title": "Settings",
+  "settings_general": "General",
+  "settings_general_site_title": "Site Title",
+  "settings_general_site_description": "Description",
+  "settings_contacts": "Contacts",
+  "settings_localization": "Localization",
+  "settings_about": "About"
+}

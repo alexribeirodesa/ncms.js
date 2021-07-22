@@ -1,0 +1,40 @@
+@keyframes mouseScroll {
+	0% { opacity: 1; top: 8px; }
+	50% { opacity: 0; top: 24px; }
+	100% { opacity: 0; top: 24px; }
+}
+.mouse {
+	position: absolute;
+	display: block;
+	width: 32px; height: 48px;
+	left: 0; right: 0; bottom: 16px;
+	margin: 0 auto 20px;
+}
+.mouse::after {
+    content: " ";
+	position: absolute;
+	display: block;
+	width: 8px; height: 8px;
+	left: 0; right: 0; top: 8px;
+    animation-name: mouseScroll;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.mouse.border {
+	border: 4px solid white;
+	border-radius: 32px;
+}
+.mouse.dot::after {
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: orange;
+}
+.mouse.arrow::after {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform-origin: top left;
+    margin-left: 50%;
+}

@@ -1,0 +1,7 @@
+{
+  "locales": ["en", "br"],
+  "defaultLocale": "br",
+  "pages": {
+    "*": ["admin"]
+  }
+}
